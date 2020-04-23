@@ -6,10 +6,7 @@ const express = require('express');
 const helmet = require('helmet');
 const cors = require('cors');
 
-const restricted = require('');
-
-const usersRouter = require('');
-const authRouter = require('');
+const authRouter = require('./routers/auth-router');
 
 const server = express();
 
