@@ -37,6 +37,8 @@ server.use(helmet());
 server.use(cors());
 server.use(session(sessionConfig));
 
+server.use('/api/users', authRouter);
+
 server.get('/', (req, res) => {
   res.json({ api: 'up' });
 });
